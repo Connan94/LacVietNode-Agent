@@ -1,0 +1,18 @@
+title: Lạc Việt Node — Giám sát node Pi
+eyebrow: Node App
+description: >-
+  Giám sát node Pi của bạn (Docker, đồng bộ, cổng ra Internet) và cảnh báo tự
+  động về hệ thống. Dán khóa liên kết là xong.
+output_file: .env
+
+fixed_values:
+  - name: UID
+    detect: uid
+
+fields:
+  - name: NODE_KEY
+    label: Khóa liên kết node
+    type: password
+    required: true
+    help: >-
+      Mở trang quản lý Lạc Việt Node → Thêm node → sao chép khóa và dán vào đây.
