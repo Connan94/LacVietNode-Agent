@@ -19,5 +19,6 @@ services:
       #   `:ro` KHÔNG làm Docker API chỉ-đọc — container vẫn tạo được container privileged -> chiếm host.
       #   App vẫn chạy tốt khi KHÔNG có nó (suy từ cổng nội bộ; ghi "không rõ" cho proto/đồng bộ).
       #   Chỉ bật nếu tin app + môi trường kín, tốt nhất qua docker-socket-proxy (read-only thật):
+      - "../../docker_volumes:/nodecfg:ro"   # [v1.5] node cfg CHI-DOC: agent tu suy Public Key (seed chi trong RAM)
       # - /var/run/docker.sock:/var/run/docker.sock:ro
     restart: unless-stopped
