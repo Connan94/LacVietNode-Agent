@@ -22,5 +22,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/connan94/lacvietnode-agent:v1.0.6
+            ghcr.io/connan94/lacvietnode-agent:v1.1.0
             ghcr.io/connan94/lacvietnode-agent:latest
